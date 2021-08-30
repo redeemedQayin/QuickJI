@@ -5,6 +5,7 @@
  */
 package Main;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /**
@@ -16,9 +17,13 @@ public class Cadastro extends javax.swing.JFrame {
     /**
      * Creates new form Login
      */
-    public Cadastro() {
+    
+    private JFrame telaLogin;
+    public Cadastro(JFrame tl) {
         initComponents();
-//        setSize(1920, 1080);
+        
+
+        this.telaLogin = tl;
     
     }
 
@@ -53,8 +58,6 @@ public class Cadastro extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2);
         jPanel2.setBounds(140, 100, 1540, 900);
-
-        jLBackground.setIcon(new javax.swing.ImageIcon("/home/qayin/NetBeansProjects/QuickJIE/src/main/java/Main/icons/background.jpeg")); // NOI18N
         getContentPane().add(jLBackground);
         jLBackground.setBounds(0, 0, 1920, 1070);
 

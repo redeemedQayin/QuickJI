@@ -109,10 +109,8 @@ public class Login extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(730, 190, 600, 330);
-
-        jLBackground.setIcon(new javax.swing.ImageIcon("/home/qayin/NetBeansProjects/QuickJIE/src/main/java/Main/icons/background.jpeg")); // NOI18N
         getContentPane().add(jLBackground);
-        jLBackground.setBounds(0, 0, 1920, 1080);
+        jLBackground.setBounds(0, 0, 0, 1080);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -128,7 +126,10 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jLabel3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel3MouseClicked
-        
+        Cadastro cad = new Cadastro(this);
+        this.setVisible(false);
+        cad.setVisible(true);
+        cad.setExtendedState(MAXIMIZED_BOTH);
     }//GEN-LAST:event_jLabel3MouseClicked
 
     /**
